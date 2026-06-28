@@ -155,7 +155,7 @@
 <tr><td><code>2022-09-18</code></td><td><a href="https://github.com/suzike/EmbedSummary">EmbedSummary</a><br /><sub>精品嵌入式资源汇总。</sub></td><td><code>Docs</code><br /><sub>Fork</sub></td><td><code>Stars 1</code><br /><code>Watchers 1</code><br /><code>Forks 0</code></td><td><code>2022-06-02</code></td></tr>
 </table>
 
-<sub>自动更新: 2026-06-28T06:26:47Z · 数据来自 GitHub REST API · workflow 每 6 小时运行一次，也支持手动触发。</sub>
+<sub>生成时间: 2026-06-28T06:28:08Z · 数据来自 GitHub REST API · 自动更新脚本已就绪；授权 workflow scope 后可启用 6 小时定时刷新。</sub>
 <!-- PROFILE-AUTO:END -->
 
 ## 工程笔记
