@@ -143,7 +143,7 @@ def generated_section(repos):
             "\n".join(rows),
             "</table>",
             "",
-            f"<sub>自动更新: {generated_at} · 数据来自 GitHub REST API · workflow 每 6 小时运行一次，也支持手动触发。</sub>",
+            f"<sub>生成时间: {generated_at} · 数据来自 GitHub REST API · 自动更新脚本已就绪；授权 workflow scope 后可启用 6 小时定时刷新。</sub>",
         ]
     )
 
