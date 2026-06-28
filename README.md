@@ -1,8 +1,8 @@
 <!-- Profile README for https://github.com/suzike -->
 
 <div align="center">
-  <img src="./assets/profile-hero-light.svg#gh-light-mode-only" width="100%" alt="南珠 / Suzike GitHub 个人主页浅色横幅" />
-  <img src="./assets/profile-hero-dark.svg#gh-dark-mode-only" width="100%" alt="南珠 / Suzike GitHub 个人主页深色横幅" />
+  <img src="./assets/profile-hero-light.svg#gh-light-mode-only" width="100%" alt="南橘 / Suzike GitHub 个人主页浅色横幅" />
+  <img src="./assets/profile-hero-dark.svg#gh-dark-mode-only" width="100%" alt="南橘 / Suzike GitHub 个人主页深色横幅" />
 </div>
 
 ## 定位
