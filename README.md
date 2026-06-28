@@ -114,6 +114,50 @@
   </tr>
 </table>
 
+## Live Repository Signals
+
+<!-- PROFILE-AUTO:START -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Public%20Repos-8-0369A1?style=flat-square&labelColor=E0F2FE" alt="Public Repos: 8" />
+  <img src="https://img.shields.io/badge/Original-5-075985?style=flat-square&labelColor=E0F2FE" alt="Original: 5" />
+  <img src="https://img.shields.io/badge/Forks-3-475569?style=flat-square&labelColor=E0F2FE" alt="Forks: 3" />
+  <img src="https://img.shields.io/badge/Stars-17-0F172A?style=flat-square&labelColor=E0F2FE" alt="Stars: 17" />
+  <img src="https://img.shields.io/badge/Watchers-17-1E3A8A?style=flat-square&labelColor=E0F2FE" alt="Watchers: 17" />
+  <img src="https://img.shields.io/badge/Forked%20By%20Others-2-334155?style=flat-square&labelColor=E0F2FE" alt="Forked By Others: 2" />
+</div>
+
+<br />
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Docs-4-0369A1?style=flat-square&labelColor=E0F2FE" alt="Docs: 4" />
+  <img src="https://img.shields.io/badge/Python-2-3776AB?style=flat-square&labelColor=E0F2FE" alt="Python: 2" />
+  <img src="https://img.shields.io/badge/JavaScript-1-F7DF1E?style=flat-square&labelColor=0F172A" alt="JavaScript: 1" />
+  <img src="https://img.shields.io/badge/MATLAB-1-E16737?style=flat-square&labelColor=E0F2FE" alt="MATLAB: 1" />
+</div>
+
+<br />
+
+<table>
+  <tr>
+    <th>发布时间</th>
+    <th>仓库</th>
+    <th>主语言</th>
+    <th>动态信号</th>
+    <th>最近更新</th>
+  </tr>
+<tr><td><code>2026-06-28</code></td><td><a href="https://github.com/suzike/suzike">suzike</a><br /><sub>Profile README for Suzike / Nanju</sub></td><td><code>Docs</code><br /><sub>Original</sub></td><td><code>Stars 0</code><br /><code>Watchers 0</code><br /><code>Forks 0</code></td><td><code>2026-06-28</code></td></tr>
+<tr><td><code>2026-06-26</code></td><td><a href="https://github.com/suzike/matlab-simulink-copilot">matlab-simulink-copilot</a><br /><sub>内嵌进 MATLAB/Simulink 界面的 AI 助手侧边栏，支持 Claude Code/Codex 后端。</sub></td><td><code>JavaScript</code><br /><sub>Original</sub></td><td><code>Stars 2</code><br /><code>Watchers 2</code><br /><code>Forks 0</code></td><td><code>2026-06-27</code></td></tr>
+<tr><td><code>2026-06-23</code></td><td><a href="https://github.com/suzike/Vehicle-Thermal-LLM-MultiAgent">Vehicle-Thermal-LLM-MultiAgent</a><br /><sub>面向汽车空调热舒适的大模型驱动 Agent 智能系统。</sub></td><td><code>Python</code><br /><sub>Original</sub></td><td><code>Stars 1</code><br /><code>Watchers 1</code><br /><code>Forks 0</code></td><td><code>2026-06-28</code></td></tr>
+<tr><td><code>2026-05-26</code></td><td><a href="https://github.com/suzike/wechat-radar">wechat-radar</a><br /><sub>微信聊天情报看板：聚合群聊信号、话题、链接和趋势。</sub></td><td><code>Docs</code><br /><sub>Fork</sub></td><td><code>Stars 0</code><br /><code>Watchers 0</code><br /><code>Forks 0</code></td><td><code>2026-05-26</code></td></tr>
+<tr><td><code>2026-05-09</code></td><td><a href="https://github.com/suzike/AITrain_Platform">AITrain_Platform</a><br /><sub>AI 算法开发、训练、部署等全套研发可视化平台。</sub></td><td><code>Python</code><br /><sub>Original</sub></td><td><code>Stars 3</code><br /><code>Watchers 3</code><br /><code>Forks 0</code></td><td><code>2026-05-14</code></td></tr>
+<tr><td><code>2025-12-14</code></td><td><a href="https://github.com/suzike/next-ai-draw-io">next-ai-draw-io</a><br /><sub>AI-assisted draw.io diagramming with natural-language editing.</sub></td><td><code>Docs</code><br /><sub>Fork</sub></td><td><code>Stars 0</code><br /><code>Watchers 0</code><br /><code>Forks 0</code></td><td><code>2025-12-14</code></td></tr>
+<tr><td><code>2025-12-14</code></td><td><a href="https://github.com/suzike/DeepSeekMatlabCopilot">DeepSeekMatlabCopilot</a><br /><sub>DeepSeek AI copilot for MATLAB engineering workflows.</sub></td><td><code>MATLAB</code><br /><sub>Original</sub></td><td><code>Stars 10</code><br /><code>Watchers 10</code><br /><code>Forks 2</code></td><td><code>2025-12-14</code></td></tr>
+<tr><td><code>2022-09-18</code></td><td><a href="https://github.com/suzike/EmbedSummary">EmbedSummary</a><br /><sub>精品嵌入式资源汇总。</sub></td><td><code>Docs</code><br /><sub>Fork</sub></td><td><code>Stars 1</code><br /><code>Watchers 1</code><br /><code>Forks 0</code></td><td><code>2022-06-02</code></td></tr>
+</table>
+
+<sub>自动更新: 2026-06-28T06:26:47Z · 数据来自 GitHub REST API · workflow 每 6 小时运行一次，也支持手动触发。</sub>
+<!-- PROFILE-AUTO:END -->
+
 ## 工程笔记
 
 > [!TIP]
