@@ -1,8 +1,7 @@
 <!-- Profile README for https://github.com/suzike -->
 
 <div align="center">
-  <img src="./assets/profile-hero-light.svg#gh-light-mode-only" width="100%" alt="南橘 / Suzike GitHub 个人主页浅色横幅" />
-  <img src="./assets/profile-hero-dark.svg#gh-dark-mode-only" width="100%" alt="南橘 / Suzike GitHub 个人主页深色横幅" />
+  <img src="./assets/profile-hero.svg" width="100%" alt="南橘 / Suzike GitHub 个人主页横幅" />
 </div>
 
 ## 定位
@@ -12,8 +11,7 @@
 我的目标是构建一套能够覆盖 PRD/SOR、SWRS、Architecture、SWDD、Simulink Model、MIL/HIL、标定、交付证据和 Knowledge Base 的研发闭环，让 LLM、Agent、MCP、Toolchain 和企业知识真正进入工程开发流程。
 
 <div align="center">
-  <img src="./assets/platform-loop-light.svg#gh-light-mode-only" width="100%" alt="AI Native 研发闭环浅色" />
-  <img src="./assets/platform-loop-dark.svg#gh-dark-mode-only" width="100%" alt="AI Native 研发闭环深色" />
+  <img src="./assets/platform-loop.svg" width="100%" alt="AI Native 研发闭环" />
 </div>
 
 ## 当前主线
