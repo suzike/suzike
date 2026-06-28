@@ -1,0 +1,110 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">南橘 / Suzike 主页横幅</title>
+  <desc id="desc">面向汽车热管理和 AI Native 研发平台的自适应主题高级科技风横幅。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop class="bg0"/>
+      <stop class="bg1" offset="0.56"/>
+      <stop class="bg2" offset="1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="92" y1="110" x2="1194" y2="262" gradientUnits="userSpaceOnUse">
+      <stop class="accent0"/>
+      <stop class="accent1" offset="0.52"/>
+      <stop class="accent2" offset="1"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 116) rotate(90) scale(220 360)">
+      <stop class="halo0"/>
+      <stop class="halo1" offset="1"/>
+    </radialGradient>
+    <filter id="softGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      :root {
+        --title: #07111F;
+        --subtitle: #334155;
+        --eyebrow: #075985;
+        --label: #0C4A6E;
+        --muted: #475569;
+        --grid: rgba(15,23,42,.09);
+        --card: rgba(248,250,252,.88);
+        --chip: rgba(2,132,199,.12);
+        --border: rgba(2,132,199,.34);
+        --line: #0369A1;
+      }
+      .bg0 { stop-color: #EAF2FB; }
+      .bg1 { stop-color: #D9E8F7; }
+      .bg2 { stop-color: #C7DCF2; }
+      .accent0 { stop-color: #0369A1; }
+      .accent1 { stop-color: #0284C7; }
+      .accent2 { stop-color: #2563EB; }
+      .halo0 { stop-color: #0284C7; stop-opacity: .18; }
+      .halo1 { stop-color: #38BDF8; stop-opacity: 0; }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --title: #F8FAFC;
+          --subtitle: #CBD5E1;
+          --eyebrow: #7DD3FC;
+          --label: #E0F2FE;
+          --muted: #94A3B8;
+          --grid: rgba(148,163,184,.08);
+          --card: rgba(15,23,42,.72);
+          --chip: rgba(14,165,233,.10);
+          --border: rgba(125,211,252,.30);
+          --line: #38BDF8;
+        }
+        .bg0 { stop-color: #020617; }
+        .bg1 { stop-color: #07111F; }
+        .bg2 { stop-color: #0B1220; }
+        .accent0 { stop-color: #7DD3FC; }
+        .accent1 { stop-color: #38BDF8; }
+        .accent2 { stop-color: #93C5FD; }
+        .halo0 { stop-color: #38BDF8; stop-opacity: .28; }
+      }
+      .grid { stroke: var(--grid); }
+      .eyebrow { font: 600 13px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; letter-spacing: 2.5px; fill: var(--eyebrow); }
+      .title { font: 700 52px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--title); }
+      .subtitle { font: 500 18px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--subtitle); }
+      .label { font: 600 13px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--label); }
+      .muted { font: 500 12px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--muted); }
+      .card { fill: var(--card); stroke: var(--border); }
+      .chip { fill: var(--chip); stroke: var(--border); }
+    </style>
+  </defs>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#halo)"/>
+  <g>
+    <path class="grid" d="M0 60H1280M0 120H1280M0 180H1280M0 240H1280M0 300H1280"/>
+    <path class="grid" d="M120 0V360M240 0V360M360 0V360M480 0V360M600 0V360M720 0V360M840 0V360M960 0V360M1080 0V360M1200 0V360"/>
+  </g>
+  <path d="M92 274C214 198 320 198 446 238C606 288 735 294 905 210C1019 154 1112 134 1194 154" stroke="url(#accent)" stroke-width="2.2" stroke-linecap="round" opacity=".8" filter="url(#softGlow)">
+    <animate attributeName="stroke-dasharray" values="18 14;5 17;18 14" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <g transform="translate(78 70)">
+    <text class="eyebrow" x="0" y="0">AI NATIVE 工程主页</text>
+    <text class="title" x="0" y="62">南橘 / Suzike</text>
+    <text class="subtitle" x="2" y="104">汽车热管理 · 智慧空调 Agent · MATLAB/Simulink · AI Native 研发平台</text>
+    <g transform="translate(0 142)">
+      <rect class="chip" x="0" y="0" width="214" height="38" rx="8"/>
+      <text class="label" x="18" y="24">热管理控制</text>
+      <rect class="chip" x="234" y="0" width="210" height="38" rx="8"/>
+      <text class="label" x="252" y="24">Agent Workflow</text>
+      <rect class="chip" x="464" y="0" width="212" height="38" rx="8"/>
+      <text class="label" x="482" y="24">MBD</text>
+    </g>
+  </g>
+  <g transform="translate(874 64)">
+    <rect class="card" x="0" y="0" width="318" height="214" rx="8"/>
+    <text class="label" x="24" y="38">研发闭环</text>
+    <text class="muted" x="24" y="70">PRD / SOR</text>
+    <text class="muted" x="24" y="102">SWRS / Architecture</text>
+    <text class="muted" x="24" y="134">Simulink / MIL / HIL</text>
+    <text class="muted" x="24" y="166">标定 / 交付证据</text>
+    <path d="M184 62H274M184 94H274M184 126H274M184 158H274" stroke="var(--line)" stroke-opacity=".50" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="284" cy="62" r="4" fill="var(--line)"/>
+    <circle cx="284" cy="94" r="4" fill="var(--line)"/>
+    <circle cx="284" cy="126" r="4" fill="var(--line)"/>
+    <circle cx="284" cy="158" r="4" fill="var(--line)"/>
+  </g>
+</svg>
