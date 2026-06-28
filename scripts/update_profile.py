@@ -28,6 +28,29 @@ LANG_COLORS = {
     "PowerShell": "5391FE",
 }
 
+LANG_ICONS = {
+    "Python": "🐍",
+    "JavaScript": "🟨",
+    "TypeScript": "🔷",
+    "MATLAB": "📐",
+    "Jupyter Notebook": "📓",
+    "HTML": "🌐",
+    "CSS": "🎨",
+    "Shell": "🐚",
+    "PowerShell": "⚡",
+    "Docs": "📚",
+}
+
+TRACK_RULES = [
+    ("Profile / Ops", "🪪", ("profile", "readme", OWNER.lower())),
+    ("MBD / Simulink", "📐", ("matlab", "simulink", "mbd", "model")),
+    ("Thermal Agent", "🌡️", ("thermal", "comfort", "vehicle", "air", "agent", "热舒适", "热管理", "空调")),
+    ("AI Training Platform", "🧠", ("train", "platform", "算法", "训练", "部署")),
+    ("Diagram Workflow", "🧩", ("draw", "diagram", "draw.io", "图形")),
+    ("Signal Dashboard", "📡", ("wechat", "radar", "signal", "情报", "聊天", "看板")),
+    ("Knowledge Base", "📚", ("embed", "summary", "knowledge", "resource", "知识", "资源")),
+]
+
 
 def request_json(url):
     headers = {
@@ -64,6 +87,12 @@ def badge(label, value, color="0F172A", label_color="0F172A"):
     )
 
 
+def parse_github_date(value):
+    if not value:
+        return None
+    return dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
 def fmt_date(value):
     if not value:
         return "-"
@@ -74,32 +103,104 @@ def repo_link(repo):
     return f'<a href="{repo["html_url"]}">{html.escape(repo["name"])}</a>'
 
 
+def repo_track(repo):
+    text = f'{repo.get("name", "")} {repo.get("description") or ""}'.lower()
+    for label, icon, keywords in TRACK_RULES:
+        if any(keyword.lower() in text for keyword in keywords):
+            return label, icon
+    return "Engineering Lab", "🧪"
+
+
+def active_count(repos, days, now):
+    count = 0
+    for repo in repos:
+        pushed = parse_github_date(repo.get("pushed_at") or repo.get("updated_at"))
+        if pushed and (now - pushed).days <= days:
+            count += 1
+    return count
+
+
+def repo_signal_score(repo, now):
+    stars = repo.get("stargazers_count", 0)
+    watchers = repo.get("watchers_count", 0)
+    forks = repo.get("forks_count", 0)
+    pushed = parse_github_date(repo.get("pushed_at") or repo.get("updated_at"))
+    created = parse_github_date(repo.get("created_at"))
+
+    days_since_push = (now - pushed).days if pushed else 9999
+    if days_since_push <= 14:
+        freshness = 24
+    elif days_since_push <= 30:
+        freshness = 18
+    elif days_since_push <= 90:
+        freshness = 12
+    elif days_since_push <= 365:
+        freshness = 8
+    else:
+        freshness = 3
+
+    adoption = min(28, stars * 4 + watchers * 2 + forks * 5)
+    originality = 18 if not repo.get("fork") else 6
+    description = 8 if (repo.get("description") or "").strip() else 0
+    language = 6 if repo.get("language") else 3
+    newness = 8 if created and (now - created).days <= 120 else 0
+
+    return min(100, adoption + freshness + originality + description + language + newness)
+
+
+def score_color(score):
+    if score >= 80:
+        return "0F766E"
+    if score >= 65:
+        return "0369A1"
+    if score >= 50:
+        return "B45309"
+    return "475569"
+
+
+def score_bar(score):
+    filled = max(1, min(8, round(score / 12.5)))
+    return "▰" * filled + "▱" * (8 - filled)
+
+
 def generated_section(repos):
     public_repos = [r for r in repos if not r.get("archived")]
     total_stars = sum(r.get("stargazers_count", 0) for r in public_repos)
     total_forks = sum(r.get("forks_count", 0) for r in public_repos)
-    total_watchers = sum(r.get("watchers_count", 0) for r in public_repos)
     original_count = sum(1 for r in public_repos if not r.get("fork"))
     fork_count = sum(1 for r in public_repos if r.get("fork"))
+    now = dt.datetime.now(dt.UTC)
+    active_30 = active_count(public_repos, 30, now)
+    active_90 = active_count(public_repos, 90, now)
+    active_365 = active_count(public_repos, 365, now)
+    track_counter = Counter(repo_track(repo)[0] for repo in public_repos)
+    top_track = track_counter.most_common(1)[0][0] if track_counter else "Engineering Lab"
+    score_values = [repo_signal_score(repo, now) for repo in public_repos]
+    average_score = round(sum(score_values) / len(score_values)) if score_values else 0
 
     lang_counter = Counter(r.get("language") or "Docs" for r in public_repos)
     lang_badges = []
     for lang, count in lang_counter.most_common():
         color = LANG_COLORS.get(lang, "0369A1")
         label_color = "0F172A"
-        lang_badges.append(badge(lang, count, color, label_color))
+        lang_badges.append(badge(f"{LANG_ICONS.get(lang, '🧰')} {lang}", count, color, label_color))
 
     metric_badges = [
+        badge("Signal Model", "v2", "0F766E"),
         badge("Repos", len(public_repos), "0369A1"),
         badge("Original", original_count, "075985"),
-        badge("Forked", fork_count, "475569"),
+        badge("Active 90d", active_90, "155E75"),
         badge("Stars", total_stars, "0F172A"),
-        badge("Watchers", total_watchers, "1E3A8A"),
         badge("Forks", total_forks, "334155"),
     ]
 
     rows = []
-    for repo in sorted(public_repos, key=lambda r: r.get("created_at") or "", reverse=True):
+    ranked_repos = sorted(
+        public_repos,
+        key=lambda r: (repo_signal_score(r, now), r.get("pushed_at") or r.get("updated_at") or ""),
+        reverse=True,
+    )
+    for repo in ranked_repos:
         language = repo.get("language") or "Docs"
         stars = repo.get("stargazers_count", 0)
         watchers = repo.get("watchers_count", 0)
@@ -111,24 +212,41 @@ def generated_section(repos):
         desc = html.escape(desc)
         language = html.escape(language)
         kind = html.escape(kind)
+        track, track_icon = repo_track(repo)
+        score = repo_signal_score(repo, now)
         rows.append(
             "<tr>"
-            f"<td>{created}</td>"
+            f"<td align=\"center\">{badge('Signal', score, score_color(score))}<br /><sub>{score_bar(score)}</sub></td>"
             f"<td>{repo_link(repo)}<br /><sub>{desc}</sub></td>"
-            f"<td>{language}<br /><sub>{kind}</sub></td>"
-            f"<td align=\"right\">{stars}</td>"
-            f"<td align=\"right\">{watchers}</td>"
-            f"<td align=\"right\">{forks}</td>"
+            f"<td>{track_icon} {html.escape(track)}<br /><sub>{language} · {kind}</sub></td>"
+            f"<td>⭐ {stars} · 👁️ {watchers} · 🍴 {forks}<br /><sub>created {created}</sub></td>"
             f"<td>{pushed}</td>"
             "</tr>"
         )
 
-    generated_at = dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    generated_at = now.replace(microsecond=0).isoformat().replace("+00:00", "Z")
     return "\n".join(
         [
             '<p align="center">',
             "  " + "\n  ".join(metric_badges),
             "</p>",
+            "",
+            "<table>",
+            "  <tr>",
+            "    <td width=\"25%\"><b>🧭 Portfolio Mix</b><br /><sub>Original-first repo portfolio</sub><br />"
+            + badge("Original / Fork", f"{original_count} / {fork_count}", "075985")
+            + "</td>",
+            "    <td width=\"25%\"><b>⚡ Delivery Momentum</b><br /><sub>Recent public update signal</sub><br />"
+            + badge("30d / 90d / 365d", f"{active_30} / {active_90} / {active_365}", "155E75")
+            + "</td>",
+            "    <td width=\"25%\"><b>🧪 Engineering Proof</b><br /><sub>Dominant public track</sub><br />"
+            + badge("Top Track", top_track, "B45309")
+            + "</td>",
+            "    <td width=\"25%\"><b>🌐 External Signal</b><br /><sub>Stars + watchers + forks</sub><br />"
+            + badge("Avg Signal", average_score, score_color(average_score))
+            + "</td>",
+            "  </tr>",
+            "</table>",
             "",
             '<p align="center">',
             "  " + "\n  ".join(lang_badges),
@@ -136,16 +254,17 @@ def generated_section(repos):
             "",
             "<table>",
             "  <tr>",
-            "    <th>发布</th>",
+            "    <th>Signal</th>",
             "    <th>Repository</th>",
-            "    <th>Lang</th>",
-            "    <th>Stars</th>",
-            "    <th>Watchers</th>",
-            "    <th>Forks</th>",
+            "    <th>Track</th>",
+            "    <th>Signals</th>",
             "    <th>更新</th>",
             "  </tr>",
             "\n".join(rows),
             "</table>",
+            "",
+            "<sub>模型说明: Signal = 活跃度 + 原创性 + 采用度 + 工程描述完整度；"
+            "仅使用 GitHub REST API 公开元数据，不代表项目商业价值或代码质量终判。</sub>",
             "",
             f"<sub>生成时间: {generated_at} · 数据来自 GitHub REST API · 授权 workflow scope 后可启用 6 小时定时刷新。</sub>",
         ]
