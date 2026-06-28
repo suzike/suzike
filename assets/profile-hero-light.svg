@@ -1,5 +1,5 @@
 <svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">南珠 / Suzike 浅色主页横幅</title>
+  <title id="title">南橘 / Suzike 浅色主页横幅</title>
   <desc id="desc">面向汽车热管理和 AI Native 研发平台的浅色高级科技风横幅。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
@@ -42,7 +42,7 @@
   </path>
   <g transform="translate(78 70)">
     <text class="eyebrow" x="0" y="0">AI NATIVE 工程主页</text>
-    <text class="title" x="0" y="62">南珠 / Suzike</text>
+    <text class="title" x="0" y="62">南橘 / Suzike</text>
     <text class="subtitle" x="2" y="104">汽车热管理 · 智慧空调 Agent · MATLAB/Simulink · AI Native 研发平台</text>
     <g transform="translate(0 142)">
       <rect class="chip" x="0" y="0" width="214" height="38" rx="8"/>
