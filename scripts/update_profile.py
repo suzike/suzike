@@ -1,4 +1,5 @@
 import datetime as dt
+import html
 import json
 import os
 import sys
@@ -54,7 +55,7 @@ def get_all_repos():
     return repos
 
 
-def badge(label, value, color="0F172A", label_color="E0F2FE"):
+def badge(label, value, color="0F172A", label_color="0F172A"):
     label_q = urllib.parse.quote(str(label).replace("-", "--"))
     value_q = urllib.parse.quote(str(value).replace("-", "--"))
     return (
@@ -70,7 +71,7 @@ def fmt_date(value):
 
 
 def repo_link(repo):
-    return f'<a href="{repo["html_url"]}">{repo["name"]}</a>'
+    return f'<a href="{repo["html_url"]}">{html.escape(repo["name"])}</a>'
 
 
 def generated_section(repos):
@@ -85,16 +86,16 @@ def generated_section(repos):
     lang_badges = []
     for lang, count in lang_counter.most_common():
         color = LANG_COLORS.get(lang, "0369A1")
-        label_color = "E0F2FE" if color != "F7DF1E" else "0F172A"
+        label_color = "0F172A"
         lang_badges.append(badge(lang, count, color, label_color))
 
     metric_badges = [
-        badge("Public Repos", len(public_repos), "0369A1"),
+        badge("Repos", len(public_repos), "0369A1"),
         badge("Original", original_count, "075985"),
-        badge("Forks", fork_count, "475569"),
+        badge("Forked", fork_count, "475569"),
         badge("Stars", total_stars, "0F172A"),
         badge("Watchers", total_watchers, "1E3A8A"),
-        badge("Forked By Others", total_forks, "334155"),
+        badge("Forks", total_forks, "334155"),
     ]
 
     rows = []
@@ -107,43 +108,46 @@ def generated_section(repos):
         pushed = fmt_date(repo.get("pushed_at") or repo.get("updated_at"))
         kind = "Fork" if repo.get("fork") else "Original"
         desc = (repo.get("description") or "").strip() or "-"
+        desc = html.escape(desc)
+        language = html.escape(language)
+        kind = html.escape(kind)
         rows.append(
             "<tr>"
-            f"<td><code>{created}</code></td>"
+            f"<td>{created}</td>"
             f"<td>{repo_link(repo)}<br /><sub>{desc}</sub></td>"
-            f"<td><code>{language}</code><br /><sub>{kind}</sub></td>"
-            f"<td><code>Stars {stars}</code><br /><code>Watchers {watchers}</code><br /><code>Forks {forks}</code></td>"
-            f"<td><code>{pushed}</code></td>"
+            f"<td>{language}<br /><sub>{kind}</sub></td>"
+            f"<td align=\"right\">{stars}</td>"
+            f"<td align=\"right\">{watchers}</td>"
+            f"<td align=\"right\">{forks}</td>"
+            f"<td>{pushed}</td>"
             "</tr>"
         )
 
     generated_at = dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     return "\n".join(
         [
-            '<div align="center">',
+            '<p align="center">',
             "  " + "\n  ".join(metric_badges),
-            "</div>",
+            "</p>",
             "",
-            "<br />",
-            "",
-            "<div align=\"center\">",
+            '<p align="center">',
             "  " + "\n  ".join(lang_badges),
-            "</div>",
-            "",
-            "<br />",
+            "</p>",
             "",
             "<table>",
             "  <tr>",
-            "    <th>发布时间</th>",
-            "    <th>仓库</th>",
-            "    <th>主语言</th>",
-            "    <th>动态信号</th>",
-            "    <th>最近更新</th>",
+            "    <th>发布</th>",
+            "    <th>Repository</th>",
+            "    <th>Lang</th>",
+            "    <th>Stars</th>",
+            "    <th>Watchers</th>",
+            "    <th>Forks</th>",
+            "    <th>更新</th>",
             "  </tr>",
             "\n".join(rows),
             "</table>",
             "",
-            f"<sub>生成时间: {generated_at} · 数据来自 GitHub REST API · 自动更新脚本已就绪；授权 workflow scope 后可启用 6 小时定时刷新。</sub>",
+            f"<sub>生成时间: {generated_at} · 数据来自 GitHub REST API · 授权 workflow scope 后可启用 6 小时定时刷新。</sub>",
         ]
     )
 
