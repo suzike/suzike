@@ -1,0 +1,69 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">南珠 / Suzike 深色主页横幅</title>
+  <desc id="desc">面向汽车热管理和 AI Native 研发平台的深色高级科技风横幅。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="0.58" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="92" y1="110" x2="1194" y2="262" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.52" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#93C5FD"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 116) rotate(90) scale(220 360)">
+      <stop stop-color="#38BDF8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .grid { stroke: #94A3B8; stroke-opacity: .08; }
+      .eyebrow { font: 600 13px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; letter-spacing: 2.5px; fill: #7DD3FC; }
+      .title { font: 700 52px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #F8FAFC; }
+      .subtitle { font: 500 18px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #CBD5E1; }
+      .label { font: 600 13px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #E0F2FE; }
+      .muted { font: 500 12px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #94A3B8; }
+      .card { fill: rgba(15,23,42,.72); stroke: rgba(125,211,252,.28); }
+      .chip { fill: rgba(14,165,233,.10); stroke: rgba(125,211,252,.36); }
+    </style>
+  </defs>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#halo)"/>
+  <g>
+    <path class="grid" d="M0 60H1280M0 120H1280M0 180H1280M0 240H1280M0 300H1280"/>
+    <path class="grid" d="M120 0V360M240 0V360M360 0V360M480 0V360M600 0V360M720 0V360M840 0V360M960 0V360M1080 0V360M1200 0V360"/>
+  </g>
+  <path d="M92 274C214 198 320 198 446 238C606 288 735 294 905 210C1019 154 1112 134 1194 154" stroke="url(#accent)" stroke-width="2.2" stroke-linecap="round" opacity=".8" filter="url(#softGlow)">
+    <animate attributeName="stroke-dasharray" values="18 14;5 17;18 14" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <g transform="translate(78 70)">
+    <text class="eyebrow" x="0" y="0">AI NATIVE 工程主页</text>
+    <text class="title" x="0" y="62">南珠 / Suzike</text>
+    <text class="subtitle" x="2" y="104">汽车热管理 · 智慧空调 Agent · MATLAB/Simulink · AI Native 研发平台</text>
+    <g transform="translate(0 142)">
+      <rect class="chip" x="0" y="0" width="214" height="38" rx="8"/>
+      <text class="label" x="18" y="24">热管理控制</text>
+      <rect class="chip" x="234" y="0" width="210" height="38" rx="8"/>
+      <text class="label" x="252" y="24">Agent Workflow</text>
+      <rect class="chip" x="464" y="0" width="212" height="38" rx="8"/>
+      <text class="label" x="482" y="24">MBD</text>
+    </g>
+  </g>
+  <g transform="translate(874 64)">
+    <rect class="card" x="0" y="0" width="318" height="214" rx="8"/>
+    <text class="label" x="24" y="38">研发闭环</text>
+    <text class="muted" x="24" y="70">PRD / SOR</text>
+    <text class="muted" x="24" y="102">SWRS / Architecture</text>
+    <text class="muted" x="24" y="134">Simulink / MIL / HIL</text>
+    <text class="muted" x="24" y="166">标定 / 交付证据</text>
+    <path d="M184 62H274M184 94H274M184 126H274M184 158H274" stroke="#38BDF8" stroke-opacity=".45" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="284" cy="62" r="4" fill="#7DD3FC"/>
+    <circle cx="284" cy="94" r="4" fill="#7DD3FC"/>
+    <circle cx="284" cy="126" r="4" fill="#7DD3FC"/>
+    <circle cx="284" cy="158" r="4" fill="#7DD3FC"/>
+  </g>
+</svg>
