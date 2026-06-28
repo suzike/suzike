@@ -2,8 +2,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-hero-dark.png">
-    <img src="./assets/profile-hero-light.png" width="100%" alt="南橘 / Suzike GitHub 个人主页横幅">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-hero-dark-v2.png">
+    <img src="./assets/profile-hero-light-v2.png" width="100%" alt="南橘 / Suzike GitHub 个人主页横幅">
   </picture>
 </p>
 
@@ -22,8 +22,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/platform-loop-dark.png">
-    <img src="./assets/platform-loop-light.png" width="100%" alt="AI Native 研发闭环">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/platform-loop-dark-v2.png">
+    <img src="./assets/platform-loop-light-v2.png" width="100%" alt="AI Native 研发闭环">
   </picture>
 </p>
 

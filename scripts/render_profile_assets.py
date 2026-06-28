@@ -12,24 +12,24 @@ FONT_BOLD = "C:/Windows/Fonts/msyhbd.ttc"
 
 PALETTES = {
     "light": {
-        "bg_a": (48, 63, 84),
-        "bg_b": (77, 95, 118),
-        "rail": (29, 40, 56),
-        "ink": (248, 250, 252),
-        "muted": (224, 232, 241),
-        "soft": (184, 198, 215),
-        "primary": (78, 103, 135),
-        "primary_2": (188, 224, 252),
-        "line": (125, 145, 168),
-        "line_strong": (205, 217, 230),
-        "card": (57, 74, 97),
-        "card_2": (52, 68, 90),
-        "accent": (225, 158, 82),
-        "accent_soft": (103, 75, 50),
-        "wash_primary": (65, 83, 108),
-        "wash_accent": (86, 64, 43),
-        "shadow": (31, 42, 58),
-        "white": (13, 18, 30),
+        "bg_a": (252, 246, 220),
+        "bg_b": (242, 226, 176),
+        "rail": (31, 41, 55),
+        "ink": (17, 24, 39),
+        "muted": (51, 65, 85),
+        "soft": (100, 116, 139),
+        "primary": (92, 70, 35),
+        "primary_2": (31, 95, 122),
+        "line": (177, 157, 103),
+        "line_strong": (80, 93, 112),
+        "card": (255, 251, 235),
+        "card_2": (249, 241, 213),
+        "accent": (180, 116, 36),
+        "accent_soft": (226, 190, 118),
+        "wash_primary": (246, 236, 199),
+        "wash_accent": (232, 206, 139),
+        "shadow": (218, 198, 145),
+        "white": (255, 255, 255),
     },
     "dark": {
         "bg_a": (8, 9, 12),
@@ -141,7 +141,7 @@ def draw_hero(mode):
         if idx == 0:
             draw.rectangle((x + 14, 334, x + 110, 337), fill=p["accent"])
 
-    img.save(ASSETS / f"profile-hero-{mode}.png")
+    img.save(ASSETS / f"profile-hero-{mode}-v2.png")
 
 
 def arrow(draw, start, end, p, down=False):
@@ -212,7 +212,7 @@ def draw_platform(mode):
     text(draw, (220, 403), "LLM Runtime · Agent · MCP · Tool · Skill · Harness Engineering · Knowledge Base", p["muted"], 13)
     draw.rectangle((86, 424, 187, 427), fill=p["accent"])
 
-    img.save(ASSETS / f"platform-loop-{mode}.png")
+    img.save(ASSETS / f"platform-loop-{mode}-v2.png")
 
 
 def main():
