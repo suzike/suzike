@@ -12,24 +12,24 @@ FONT_BOLD = "C:/Windows/Fonts/msyhbd.ttc"
 
 PALETTES = {
     "light": {
-        "bg_a": (250, 251, 252),
-        "bg_b": (242, 246, 248),
-        "rail": (17, 24, 39),
-        "ink": (13, 18, 30),
-        "muted": (53, 65, 83),
-        "soft": (103, 116, 137),
-        "primary": (33, 57, 88),
-        "primary_2": (36, 91, 136),
-        "line": (154, 167, 183),
-        "line_strong": (71, 85, 105),
-        "card": (255, 255, 255),
-        "card_2": (247, 249, 251),
-        "accent": (156, 93, 52),
-        "accent_soft": (222, 191, 154),
-        "wash_primary": (235, 239, 243),
-        "wash_accent": (238, 241, 245),
-        "shadow": (224, 230, 238),
-        "white": (255, 255, 255),
+        "bg_a": (18, 26, 39),
+        "bg_b": (34, 47, 65),
+        "rail": (35, 50, 70),
+        "ink": (248, 250, 252),
+        "muted": (206, 216, 228),
+        "soft": (148, 163, 184),
+        "primary": (58, 89, 122),
+        "primary_2": (125, 211, 252),
+        "line": (80, 104, 130),
+        "line_strong": (151, 175, 202),
+        "card": (25, 37, 54),
+        "card_2": (23, 34, 49),
+        "accent": (232, 166, 79),
+        "accent_soft": (88, 62, 35),
+        "wash_primary": (30, 43, 61),
+        "wash_accent": (61, 44, 27),
+        "shadow": (8, 13, 22),
+        "white": (13, 18, 30),
     },
     "dark": {
         "bg_a": (8, 9, 12),
@@ -103,7 +103,7 @@ def draw_hero(mode):
 
     draw.rectangle((0, 0, 10, 340), fill=p["rail"])
     draw.rectangle((10, 0, 13, 340), fill=p["accent"])
-    draw.polygon([(1160, 0), (1280, 0), (1280, 92)], fill=p["wash_accent"])
+    draw.polygon([(1168, 0), (1280, 0), (1280, 82)], fill=p["wash_accent"])
     draw.polygon([(1125, 340), (1280, 262), (1280, 340)], fill=p["wash_primary"])
 
     left = 64
@@ -170,7 +170,7 @@ def draw_platform(mode):
     draw.rectangle((0, 0, 10, 450), fill=p["rail"])
     draw.rectangle((10, 0, 13, 450), fill=p["accent"])
     draw.polygon([(14, 0), (300, 0), (14, 96)], fill=p["wash_primary"])
-    draw.polygon([(1215, 0), (1280, 0), (1280, 450), (1250, 450)], fill=p["wash_accent"])
+    draw.polygon([(1236, 0), (1280, 0), (1280, 450), (1260, 450)], fill=p["wash_accent"])
 
     text(draw, (64, 50), "AI Native 研发闭环", p["ink"], 29, True)
     text(draw, (64, 88), "用 Agent、MCP、Tool、Skill 和 Knowledge Base 连接汽车热管理软件从需求到交付的工程路径。", p["muted"], 14)
