@@ -179,20 +179,20 @@ def generated_section(repos):
     average_score = round(sum(score_values) / len(score_values)) if score_values else 0
 
     lang_counter = Counter(r.get("language") or "Docs" for r in public_repos)
-    lang_badges = []
+    lang_items = []
     for lang, count in lang_counter.most_common():
-        color = LANG_COLORS.get(lang, "0369A1")
-        label_color = "0F172A"
-        lang_badges.append(badge(f"{LANG_ICONS.get(lang, '🧰')} {lang}", count, color, label_color))
+        lang_items.append(f"{LANG_ICONS.get(lang, '🧰')} {html.escape(lang)} <b>{count}</b>")
 
-    metric_badges = [
-        badge("Signal Model", "v2", "0F766E"),
-        badge("Repos", len(public_repos), "0369A1"),
-        badge("Original", original_count, "075985"),
-        badge("Active 90d", active_90, "155E75"),
-        badge("Stars", total_stars, "0F172A"),
-        badge("Forks", total_forks, "334155"),
-    ]
+    signal_summary = " · ".join(
+        [
+            f"Repos <b>{len(public_repos)}</b>",
+            f"Original <b>{original_count}</b>",
+            f"Fork <b>{fork_count}</b>",
+            f"Active 90d <b>{active_90}</b>",
+            f"Stars <b>{total_stars}</b>",
+            f"Forks <b>{total_forks}</b>",
+        ]
+    )
 
     rows = []
     ranked_repos = sorted(
@@ -227,30 +227,30 @@ def generated_section(repos):
     generated_at = now.replace(microsecond=0).isoformat().replace("+00:00", "Z")
     return "\n".join(
         [
-            '<p align="center">',
-            "  " + "\n  ".join(metric_badges),
-            "</p>",
-            "",
             "<table>",
             "  <tr>",
-            "    <td width=\"25%\"><b>🧭 Portfolio Mix</b><br /><sub>Original-first repo portfolio</sub><br />"
-            + badge("Original / Fork", f"{original_count} / {fork_count}", "075985")
-            + "</td>",
-            "    <td width=\"25%\"><b>⚡ Delivery Momentum</b><br /><sub>Recent public update signal</sub><br />"
-            + badge("30d / 90d / 365d", f"{active_30} / {active_90} / {active_365}", "155E75")
-            + "</td>",
-            "    <td width=\"25%\"><b>🧪 Engineering Proof</b><br /><sub>Dominant public track</sub><br />"
-            + badge("Top Track", top_track, "B45309")
-            + "</td>",
-            "    <td width=\"25%\"><b>🌐 External Signal</b><br /><sub>Stars + watchers + forks</sub><br />"
-            + badge("Avg Signal", average_score, score_color(average_score))
-            + "</td>",
+            "    <td colspan=\"4\"><b>📡 Signal Console</b><br />"
+            f"<sub>Signal Model v2 · {signal_summary}</sub></td>",
+            "  </tr>",
+            "  <tr>",
+            "    <td width=\"25%\"><b>🧭 Portfolio</b><br />"
+            f"<code>{original_count} original</code> / <code>{fork_count} fork</code><br />"
+            "<sub>Profile is original-first, forks are reference assets.</sub></td>",
+            "    <td width=\"25%\"><b>⚡ Momentum</b><br />"
+            f"<code>{active_30}</code> in 30d · <code>{active_90}</code> in 90d<br />"
+            f"<sub>{active_365} repos touched within 365 days.</sub></td>",
+            "    <td width=\"25%\"><b>🧪 Engineering</b><br />"
+            f"<code>{html.escape(top_track)}</code><br />"
+            "<sub>Dominant public engineering track.</sub></td>",
+            "    <td width=\"25%\"><b>🌐 Reach</b><br />"
+            f"<code>{average_score}</code> avg signal<br />"
+            "<sub>Stars, watchers, forks and freshness.</sub></td>",
+            "  </tr>",
+            "  <tr>",
+            "    <td colspan=\"4\"><b>Language Mix</b><br />"
+            f"<sub>{' · '.join(lang_items)}</sub></td>",
             "  </tr>",
             "</table>",
-            "",
-            '<p align="center">',
-            "  " + "\n  ".join(lang_badges),
-            "</p>",
             "",
             "<table>",
             "  <tr>",

@@ -59,30 +59,20 @@
 ## 📡 仓库信号
 
 <!-- PROFILE-AUTO:START -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Signal%20Model-v2-0F766E?style=flat-square&labelColor=0F172A" alt="Signal Model: v2" />
-  <img src="https://img.shields.io/badge/Repos-8-0369A1?style=flat-square&labelColor=0F172A" alt="Repos: 8" />
-  <img src="https://img.shields.io/badge/Original-5-075985?style=flat-square&labelColor=0F172A" alt="Original: 5" />
-  <img src="https://img.shields.io/badge/Active%2090d-5-155E75?style=flat-square&labelColor=0F172A" alt="Active 90d: 5" />
-  <img src="https://img.shields.io/badge/Stars-17-0F172A?style=flat-square&labelColor=0F172A" alt="Stars: 17" />
-  <img src="https://img.shields.io/badge/Forks-2-334155?style=flat-square&labelColor=0F172A" alt="Forks: 2" />
-</p>
-
 <table>
   <tr>
-    <td width="25%"><b>🧭 Portfolio Mix</b><br /><sub>Original-first repo portfolio</sub><br /><img src="https://img.shields.io/badge/Original%20/%20Fork-5%20/%203-075985?style=flat-square&labelColor=0F172A" alt="Original / Fork: 5 / 3" /></td>
-    <td width="25%"><b>⚡ Delivery Momentum</b><br /><sub>Recent public update signal</sub><br /><img src="https://img.shields.io/badge/30d%20/%2090d%20/%20365d-3%20/%205%20/%207-155E75?style=flat-square&labelColor=0F172A" alt="30d / 90d / 365d: 3 / 5 / 7" /></td>
-    <td width="25%"><b>🧪 Engineering Proof</b><br /><sub>Dominant public track</sub><br /><img src="https://img.shields.io/badge/Top%20Track-MBD%20/%20Simulink-B45309?style=flat-square&labelColor=0F172A" alt="Top Track: MBD / Simulink" /></td>
-    <td width="25%"><b>🌐 External Signal</b><br /><sub>Stars + watchers + forks</sub><br /><img src="https://img.shields.io/badge/Avg%20Signal-54-B45309?style=flat-square&labelColor=0F172A" alt="Avg Signal: 54" /></td>
+    <td colspan="4"><b>📡 Signal Console</b><br /><sub>Signal Model v2 · Repos <b>8</b> · Original <b>5</b> · Fork <b>3</b> · Active 90d <b>5</b> · Stars <b>17</b> · Forks <b>2</b></sub></td>
+  </tr>
+  <tr>
+    <td width="25%"><b>🧭 Portfolio</b><br /><code>5 original</code> / <code>3 fork</code><br /><sub>Profile is original-first, forks are reference assets.</sub></td>
+    <td width="25%"><b>⚡ Momentum</b><br /><code>3</code> in 30d · <code>5</code> in 90d<br /><sub>7 repos touched within 365 days.</sub></td>
+    <td width="25%"><b>🧪 Engineering</b><br /><code>MBD / Simulink</code><br /><sub>Dominant public engineering track.</sub></td>
+    <td width="25%"><b>🌐 Reach</b><br /><code>54</code> avg signal<br /><sub>Stars, watchers, forks and freshness.</sub></td>
+  </tr>
+  <tr>
+    <td colspan="4"><b>Language Mix</b><br /><sub>🐍 Python <b>3</b> · 📚 Docs <b>3</b> · 🟨 JavaScript <b>1</b> · 📐 MATLAB <b>1</b></sub></td>
   </tr>
 </table>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%90%8D%20Python-3-3776AB?style=flat-square&labelColor=0F172A" alt="🐍 Python: 3" />
-  <img src="https://img.shields.io/badge/%F0%9F%93%9A%20Docs-3-0369A1?style=flat-square&labelColor=0F172A" alt="📚 Docs: 3" />
-  <img src="https://img.shields.io/badge/%F0%9F%9F%A8%20JavaScript-1-F7DF1E?style=flat-square&labelColor=0F172A" alt="🟨 JavaScript: 1" />
-  <img src="https://img.shields.io/badge/%F0%9F%93%90%20MATLAB-1-E16737?style=flat-square&labelColor=0F172A" alt="📐 MATLAB: 1" />
-</p>
 
 <table>
   <tr>
@@ -104,7 +94,7 @@
 
 <sub>模型说明: Signal = 活跃度 + 原创性 + 采用度 + 工程描述完整度；仅使用 GitHub REST API 公开元数据，不代表项目商业价值或代码质量终判。</sub>
 
-<sub>生成时间: 2026-06-28T07:09:37Z · 数据来自 GitHub REST API · 授权 workflow scope 后可启用 6 小时定时刷新。</sub>
+<sub>生成时间: 2026-06-28T09:49:09Z · 数据来自 GitHub REST API · 授权 workflow scope 后可启用 6 小时定时刷新。</sub>
 <!-- PROFILE-AUTO:END -->
 
 ## 📝 工程笔记
