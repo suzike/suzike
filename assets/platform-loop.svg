@@ -1,0 +1,121 @@
+<svg width="1280" height="430" viewBox="0 0 1280 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI Native 研发闭环图</title>
+  <desc id="desc">汽车热管理 AI Native 研发平台自适应主题分层蓝图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="430" gradientUnits="userSpaceOnUse">
+      <stop class="bg0"/>
+      <stop class="bg1" offset="1"/>
+    </linearGradient>
+    <style>
+      :root {
+        --title: #07111f;
+        --text: #1e293b;
+        --muted: #334155;
+        --line: #0369a1;
+        --panel: #dbeafe;
+        --panel-border: #7dd3fc;
+        --card: #f8fafc;
+        --card-border: #0284c7;
+        --lane: rgba(2, 132, 199, .08);
+        --label-bg: #0f172a;
+        --label-text: #f8fafc;
+        --arrow: #075985;
+      }
+      .bg0 { stop-color: #eaf2fb; }
+      .bg1 { stop-color: #cbdff4; }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --title: #f8fafc;
+          --text: #e2e8f0;
+          --muted: #cbd5e1;
+          --line: #7dd3fc;
+          --panel: rgba(15, 23, 42, .72);
+          --panel-border: rgba(125, 211, 252, .30);
+          --card: rgba(2, 6, 23, .84);
+          --card-border: rgba(125, 211, 252, .42);
+          --lane: rgba(125, 211, 252, .08);
+          --label-bg: #e0f2fe;
+          --label-text: #082f49;
+          --arrow: #7dd3fc;
+        }
+        .bg0 { stop-color: #020617; }
+        .bg1 { stop-color: #0b1220; }
+      }
+      .title { font: 700 28px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--title); }
+      .sub { font: 500 14px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--muted); }
+      .laneTitle { font: 700 13px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--label-text); }
+      .nodeTitle { font: 700 14px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--line); }
+      .nodeSub { font: 500 12px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: var(--muted); }
+      .panel { fill: var(--panel); stroke: var(--panel-border); }
+      .lane { fill: var(--lane); stroke: var(--panel-border); stroke-opacity: .55; }
+      .node { fill: var(--card); stroke: var(--card-border); }
+      .label { fill: var(--label-bg); }
+      .arrow { font: 700 24px 'Segoe UI',Arial,sans-serif; fill: var(--arrow); }
+    </style>
+  </defs>
+
+  <rect width="1280" height="430" rx="10" fill="url(#bg)"/>
+  <text x="64" y="58" class="title">AI Native 研发闭环</text>
+  <text x="64" y="84" class="sub">以 Agent、MCP、Tool、Skill 和 Knowledge Base 串联汽车热管理软件从需求到交付的工程路径。</text>
+
+  <rect class="panel" x="56" y="112" width="1168" height="260" rx="10"/>
+
+  <g transform="translate(84 136)">
+    <rect class="lane" x="0" y="0" width="1112" height="62" rx="8"/>
+    <rect class="label" x="18" y="17" width="92" height="28" rx="6"/>
+    <text class="laneTitle" x="39" y="36">输入层</text>
+
+    <rect class="node" x="142" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="160" y="28">PRD / SOR</text>
+    <text class="nodeSub" x="160" y="44">场景与边界</text>
+    <text class="arrow" x="336" y="39">→</text>
+    <rect class="node" x="382" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="400" y="28">SWRS</text>
+    <text class="nodeSub" x="400" y="44">软件需求分析</text>
+    <text class="arrow" x="576" y="39">→</text>
+    <rect class="node" x="622" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="640" y="28">Acceptance</text>
+    <text class="nodeSub" x="640" y="44">验收准则</text>
+  </g>
+
+  <g transform="translate(84 220)">
+    <rect class="lane" x="0" y="0" width="1112" height="62" rx="8"/>
+    <rect class="label" x="18" y="17" width="92" height="28" rx="6"/>
+    <text class="laneTitle" x="39" y="36">设计层</text>
+
+    <rect class="node" x="142" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="160" y="28">Architecture</text>
+    <text class="nodeSub" x="160" y="44">接口 / 状态 / 时序</text>
+    <text class="arrow" x="336" y="39">→</text>
+    <rect class="node" x="382" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="400" y="28">SWDD</text>
+    <text class="nodeSub" x="400" y="44">控制逻辑 / 数据流</text>
+    <text class="arrow" x="576" y="39">→</text>
+    <rect class="node" x="622" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="640" y="28">Simulink Model</text>
+    <text class="nodeSub" x="640" y="44">Model Dev / Check</text>
+  </g>
+
+  <g transform="translate(84 304)">
+    <rect class="lane" x="0" y="0" width="1112" height="62" rx="8"/>
+    <rect class="label" x="18" y="17" width="92" height="28" rx="6"/>
+    <text class="laneTitle" x="39" y="36">验证层</text>
+
+    <rect class="node" x="142" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="160" y="28">MIL / HIL</text>
+    <text class="nodeSub" x="160" y="44">Test Case / Evidence</text>
+    <text class="arrow" x="336" y="39">→</text>
+    <rect class="node" x="382" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="400" y="28">Calibration</text>
+    <text class="nodeSub" x="400" y="44">参数策略 / 发布证据</text>
+    <text class="arrow" x="576" y="39">→</text>
+    <rect class="node" x="622" y="10" width="172" height="42" rx="7"/>
+    <text class="nodeTitle" x="640" y="28">Knowledge Base</text>
+    <text class="nodeSub" x="640" y="44">复用 / 闭环改进</text>
+    <rect class="node" x="846" y="10" width="206" height="42" rx="7"/>
+    <text class="nodeTitle" x="864" y="28">Agent Loop Engineering</text>
+    <text class="nodeSub" x="864" y="44">智能体的循环工程</text>
+  </g>
+
+  <text x="64" y="404" class="sub">底座: LLM Runtime · Agent · MCP · Tool · Skill · Harness Engineering · Knowledge Base</text>
+</svg>
