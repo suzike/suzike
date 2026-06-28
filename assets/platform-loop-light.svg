@@ -1,0 +1,36 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI Native 研发闭环浅色图</title>
+  <desc id="desc">汽车热管理 AI Native 研发平台浅色闭环图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="108" y1="212" x2="1172" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0369A1"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 26px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #0F172A; }
+      .sub { font: 500 14px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #475569; }
+      .nodeTitle { font: 700 14px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #075985; }
+      .nodeSub { font: 500 12px 'Microsoft YaHei','Noto Sans SC','Segoe UI',Arial,sans-serif; fill: #64748B; }
+      .panel { fill: rgba(255,255,255,.78); stroke: rgba(2,132,199,.22); }
+      .node { fill: rgba(248,250,252,.94); stroke: rgba(2,132,199,.28); }
+    </style>
+  </defs>
+  <rect width="1280" height="420" rx="8" fill="url(#bg)"/>
+  <text x="64" y="58" class="title">AI Native 研发闭环</text>
+  <text x="64" y="84" class="sub">从产品意图到汽车热管理软件验证交付的工程化路径。</text>
+  <rect class="panel" x="56" y="112" width="1168" height="244" rx="8"/>
+  <path d="M132 238H1148" stroke="url(#stroke)" stroke-width="2" stroke-linecap="round"/>
+  <g><rect class="node" x="84" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="106" y="200">PRD/SOR</text><text class="nodeSub" x="106" y="225">产品意图</text><text class="nodeSub" x="106" y="244">场景边界</text><circle cx="147" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="234" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="258" y="200">SWRS</text><text class="nodeSub" x="258" y="225">Requirements</text><text class="nodeSub" x="258" y="244">验收准则</text><circle cx="297" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="384" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="408" y="200">Architecture</text><text class="nodeSub" x="408" y="225">接口状态</text><text class="nodeSub" x="408" y="244">时序约束</text><circle cx="447" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="534" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="558" y="200">SWDD</text><text class="nodeSub" x="558" y="225">控制逻辑</text><text class="nodeSub" x="558" y="244">数据流</text><circle cx="597" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="684" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="708" y="200">Simulink</text><text class="nodeSub" x="708" y="225">Model Dev</text><text class="nodeSub" x="708" y="244">Model Check</text><circle cx="747" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="834" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="858" y="200">MIL/HIL</text><text class="nodeSub" x="858" y="225">测试用例</text><text class="nodeSub" x="858" y="244">验证证据</text><circle cx="897" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="984" y="166" width="126" height="98" rx="8"/><text class="nodeTitle" x="1008" y="200">标定交付</text><text class="nodeSub" x="1008" y="225">参数策略</text><text class="nodeSub" x="1008" y="244">发布证据</text><circle cx="1047" cy="238" r="5" fill="#0284C7"/></g>
+  <g><rect class="node" x="1128" y="166" width="68" height="98" rx="8"/><text class="nodeTitle" x="1145" y="200">知识</text><text class="nodeSub" x="1145" y="225">闭环</text><circle cx="1162" cy="238" r="5" fill="#0284C7"/></g>
+  <text x="64" y="386" class="sub">Agent Runtime · MCP · Tool · Skill · Knowledge Base · Agent Loop Engineering</text>
+</svg>
