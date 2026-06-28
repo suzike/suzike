@@ -1,7 +1,10 @@
 <!-- Profile README for https://github.com/suzike -->
 
 <div align="center">
-  <img src="./assets/profile-hero.svg" width="100%" alt="南橘 / Suzike GitHub 个人主页横幅" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-hero-dark.png">
+    <img src="./assets/profile-hero-light.png" width="100%" alt="南橘 / Suzike GitHub 个人主页横幅">
+  </picture>
 </div>
 
 ## 定位
@@ -11,7 +14,10 @@
 我的目标是构建一套能够覆盖 PRD/SOR、SWRS、Architecture、SWDD、Simulink Model、MIL/HIL、标定、交付证据和 Knowledge Base 的研发闭环，让 LLM、Agent、MCP、Toolchain 和企业知识真正进入工程开发流程。
 
 <div align="center">
-  <img src="./assets/platform-loop.svg" width="100%" alt="AI Native 研发闭环" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/platform-loop-dark.png">
+    <img src="./assets/platform-loop-light.png" width="100%" alt="AI Native 研发闭环">
+  </picture>
 </div>
 
 ## 当前主线
@@ -29,8 +35,8 @@
 | --- | --- | --- |
 | MATLAB/Simulink AI Sidecar | [matlab-simulink-copilot](https://github.com/suzike/matlab-simulink-copilot) | 将 AI Assistant 嵌入 MATLAB/Simulink Workflow |
 | MATLAB DeepSeek Copilot | [DeepSeekMatlabCopilot](https://github.com/suzike/DeepSeekMatlabCopilot) | 面向 MATLAB 工程研发的 DeepSeek Copilot 探索 |
-| AI 训练平台 | [AITrain_Platform](https://github.com/suzike/AITrain_Platform) | 预测模型训练、评估和平台化流程 |
-| TMS Agent Workflow | [tms-agent-workflow](https://github.com/suzike/tms-agent-workflow) | 面向 TMS、Simulink、SWDD 的多 Agent 工程任务编排 |
+| AI 训练平台 | [AITrain_Platform](https://github.com/suzike/AITrain_Platform) | AI 算法开发、训练、部署等全套研发可视化平台 |
+| KMS-Agent Workflow | [tms-agent-workflow](https://github.com/suzike/tms-agent-workflow) | 面向汽车空调热舒适的大模型驱动 Agent 智能系统 |
 | AI 图形编辑 | [next-ai-draw-io](https://github.com/suzike/next-ai-draw-io) | 自然语言驱动图形创建与编辑 |
 | Embedded Knowledge Base | [EmbedSummary](https://github.com/suzike/EmbedSummary) | 嵌入式工程资源与知识整理 |
 
