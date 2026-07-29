@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="100" viewBox="0 0 900 100">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#243B55"/>
+      <stop offset="1" stop-color="#141E30"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="100" fill="url(#bg)"/>
+  <path d="M0,42 C180,78 380,8 560,42 C710,68 810,30 900,52 L900,0 L0,0 Z" fill="#0d1117" fill-opacity="0.35"/>
+  <path d="M0,26 C160,56 340,4 520,28 C680,50 800,18 900,36 L900,0 L0,0 Z" fill="#0d1117" fill-opacity="0.45"/>
+  <text x="450" y="72" text-anchor="middle" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-size="12" fill="#a8b8d0" letter-spacing="2">Automotive Thermal Management · AI Native R&amp;D · MATLAB/Simulink MBD · Agent Engineering</text>
+</svg>

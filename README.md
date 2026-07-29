@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:141E30,100:243B55&text=%E5%8D%97%E6%A9%98%20%C2%B7%20Suzike&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=Automotive%20Thermal%20Software%20%C3%97%20AI%20Native%20R%26D%20Engineering&descSize=16&descAlignY=58&descColor=a8b8d0&animation=fadeIn" alt="header"/>
+<img width="100%" src="assets/header.svg" alt="南橘 · Suzike"/>
 
 <div align="center">
 
@@ -26,35 +26,39 @@
 | 🧠 | **AI Native 研发平台** | PRD/SOR → SWRS → SWDD → Simulink → MIL/HIL → 标定证据 → 知识沉淀 |
 | 📐 | **MBD 自动化** | Simulink 工具链内嵌 Agent · 多模型 Context · 脚本与文档自动生成 |
 
-## 🚀 代表项目
+## 🚀 代表项目 <sub>· 按最近更新</sub>
 
 <p align="center">
-  <a href="https://github.com/suzike/matlab-simulink-copilot"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=suzike&repo=matlab-simulink-copilot&theme=transparent&hide_border=true&title_color=3B82F6&icon_color=3B82F6" alt="matlab-simulink-copilot"/></a>
-  <a href="https://github.com/suzike/Vehicle-Thermal-LLM-MultiAgent"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=suzike&repo=Vehicle-Thermal-LLM-MultiAgent&theme=transparent&hide_border=true&title_color=3B82F6&icon_color=3B82F6" alt="Vehicle-Thermal-LLM-MultiAgent"/></a>
+  <a href="https://github.com/suzike/matlab-simulink-copilot"><img width="48%" src="assets/card-matlab-simulink-copilot.svg" alt="matlab-simulink-copilot"/></a>
+  <a href="https://github.com/suzike/Office-Viewer"><img width="48%" src="assets/card-office-viewer.svg" alt="Office-Viewer"/></a>
 </p>
 <p align="center">
-  <a href="https://github.com/suzike/AITrain_Platform"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=suzike&repo=AITrain_Platform&theme=transparent&hide_border=true&title_color=3B82F6&icon_color=3B82F6" alt="AITrain_Platform"/></a>
-  <a href="https://github.com/suzike/DeepSeekMatlabCopilot"><img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=suzike&repo=DeepSeekMatlabCopilot&theme=transparent&hide_border=true&title_color=3B82F6&icon_color=3B82F6" alt="DeepSeekMatlabCopilot"/></a>
+  <a href="https://github.com/suzike/agentic-island"><img width="48%" src="assets/card-agentic-island.svg" alt="agentic-island"/></a>
+  <a href="https://github.com/suzike/Intelligent-Calibration-platform"><img width="48%" src="assets/card-intelligent-calibration.svg" alt="Intelligent-Calibration-platform"/></a>
 </p>
 
 ## 🛠️ 技术栈
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=matlab,python,ts,nextjs,react,docker,git,github,vscode,linux&perline=10" alt="skills"/>
+  <img src="https://img.shields.io/badge/MATLAB-e16737?style=for-the-badge" alt="MATLAB"/>
+  <img src="https://img.shields.io/badge/Simulink-e16737?style=for-the-badge" alt="Simulink"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
 </p>
-
 <p align="center">
-  <code>LLM</code> <code>Agent</code> <code>MCP</code> <code>RAG</code> <code>Knowledge Base</code> &nbsp;·&nbsp; <code>SWRS</code> <code>SWDD</code> <code>MIL/HIL</code> <code>Calibration Evidence</code> &nbsp;·&nbsp; <code>Simulink</code> <code>Stateflow</code>
+  <img src="https://img.shields.io/badge/LLM%20%C2%B7%20Agent%20%C2%B7%20MCP%20%C2%B7%20RAG-243B55?style=flat-square" alt="AI"/>
+  <img src="https://img.shields.io/badge/SWRS%20%E2%86%92%20SWDD%20%E2%86%92%20MIL%2FHIL-243B55?style=flat-square" alt="engineering"/>
+  <img src="https://img.shields.io/badge/Calibration%20Evidence-243B55?style=flat-square" alt="calibration"/>
 </p>
 
 ## 📊 数据
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=suzike&show_icons=true&theme=transparent&hide_border=true&title_color=3B82F6&icon_color=3B82F6&rank_icon=github" alt="stats"/>
   <img height="165" src="https://streak-stats.demolab.com?user=suzike&theme=transparent&hide_border=true&ring=3B82F6&fire=3B82F6&currStreakLabel=3B82F6" alt="streak"/>
 </p>
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=suzike&theme=github-compact&hide_border=true&area=true&color=3B82F6&line=3B82F6&point=3B82F6" alt="activity graph"/>
 
 ## 📮 联系
 
@@ -64,4 +68,4 @@
   <img src="https://img.shields.io/badge/%E9%9C%80%E6%B1%82%20%2F%20Bug%20%2F%20%E6%96%B9%E6%A1%88-Repository%20Issues-3B82F6?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="issues"/>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:243B55,100:141E30" alt="footer"/>
+<img width="100%" src="assets/footer.svg" alt="footer"/>
