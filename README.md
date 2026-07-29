@@ -1,139 +1,73 @@
-<!-- Profile README for https://github.com/suzike -->
+<div align="center">
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-hero-dark-v2.png">
-    <img src="./assets/profile-hero-light-v2.png" width="100%" alt="南橘 / Suzike GitHub 个人主页横幅">
-  </picture>
-</p>
+<br/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Focus-Automotive%20Thermal%20ASW-0B5E7A?style=flat&labelColor=0F172A&logo=githubsponsors&logoColor=white" alt="Focus: Automotive Thermal ASW" />
-  <img src="https://img.shields.io/badge/MBD-MATLAB%20%2F%20Simulink-B45309?style=flat&labelColor=0F172A&logo=mathworks&logoColor=white" alt="MBD: MATLAB / Simulink" />
-  <img src="https://img.shields.io/badge/Agent-AI%20Native%20R%26D-155E75?style=flat&labelColor=0F172A&logo=openai&logoColor=white" alt="Agent: AI Native R&D" />
-  <img src="https://img.shields.io/badge/Platform-Toolchain%20%2B%20Knowledge%20Base-334155?style=flat&labelColor=0F172A&logo=githubactions&logoColor=white" alt="Platform: Toolchain + Knowledge Base" />
-</p>
+# 南橘 · Suzike
 
-## 🧭 核心定位
+**汽车热管理应用层软件 × AI Native 研发工程**
 
-> 我聚焦 **汽车热管理应用层软件**、**MATLAB/Simulink MBD** 与 **AI Native 研发平台**。目标是把 `LLM`、`Agent`、`MCP`、`Toolchain` 和 `Knowledge Base` 接入真实研发流程，形成从需求到交付的工程闭环。
+<sub>Automotive Thermal Software &nbsp;·&nbsp; MATLAB/Simulink MBD &nbsp;·&nbsp; Agent Engineering</sub>
 
-当前工作重点集中在智慧空调 Agent、热舒适控制、MBD 自动化和企业级 AI Native 研发平台。相比概念 Demo，我更关注可交付的 `SWRS`、`Architecture`、`SWDD`、`Simulink Model`、`MIL/HIL Test Case`、标定证据、自动化脚本和知识沉淀。
+<br/>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/platform-loop-dark-v2.png">
-    <img src="./assets/platform-loop-light-v2.png" width="100%" alt="AI Native 研发闭环">
-  </picture>
-</p>
+把 LLM、Agent、MCP 与 Toolchain 接入真实研发流程 ——
+从 PRD/SOR 到 SWRS、SWDD、Simulink Model、MIL/HIL 与交付证据的工程闭环。
 
-## 🧱 工作主线
+<br/>
 
-| 主线 | 工程问题 | 交付物 |
-| --- | --- | --- |
-| 🚗 汽车热管理应用层软件 | 热舒适控制、热管理控制算法、智能座舱场景 | `SWRS`、控制逻辑、`Model Design`、验证证据 |
-| 🌡️ 智慧空调 Agent | 个性化控制、自学习、用户偏好建模、AI 控制算法 | `Agent Demo`、数据流、模型策略、车端约束 |
-| 🧠 AI Native 研发平台 | 从 `PRD/SOR` 到设计、建模、测试、标定和知识闭环 | `Role`、`Skill`、`Tool`、`MCP`、`Knowledge Base`、`SOP` |
-| 📐 MATLAB/Simulink Workflow | Engine 嵌入、Model 开发、Script、MIL/HIL、文档生成 | 工具内 Agent、多模型 Context、权限模式、Automation |
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&pause=1400&color=8A8F98&center=true&vCenter=true&width=460&lines=Thermal+Comfort+Agent;AI+Native+R%26D+Platform;MBD+Automation+%C2%B7+MIL+%2F+HIL;Requirements+%E2%86%92+Delivery+Evidence" alt="focus" />
 
-## 🕹️ 项目控制台
+</div>
 
-| 仓库 | 角色 | 说明 |
-| --- | --- | --- |
-| [matlab-simulink-copilot](https://github.com/suzike/matlab-simulink-copilot) | 📐 MATLAB/Simulink AI Sidecar | 将 AI Assistant 嵌入 MATLAB/Simulink Workflow。 |
-| [DeepSeekMatlabCopilot](https://github.com/suzike/DeepSeekMatlabCopilot) | 🧩 MATLAB Copilot | 面向 MATLAB 工程研发的 DeepSeek Copilot 探索。 |
-| [AITrain_Platform](https://github.com/suzike/AITrain_Platform) | 🧠 AI 训练平台 | AI 算法开发、训练、部署等全套研发可视化平台。 |
-| [Vehicle-Thermal-LLM-MultiAgent](https://github.com/suzike/Vehicle-Thermal-LLM-MultiAgent) | 🌡️ 热舒适 Agent 系统 | 面向汽车空调热舒适的大模型驱动 Agent 智能系统。 |
-| [next-ai-draw-io](https://github.com/suzike/next-ai-draw-io) | 🧭 AI 图形编辑 | 自然语言驱动图形创建与编辑。 |
-| [EmbedSummary](https://github.com/suzike/EmbedSummary) | 📚 工程知识整理 | 嵌入式工程资源与知识整理。 |
+<br/>
 
-## 🧰 技术栈
+---
 
-| 层级 | 关键词 |
-| --- | --- |
-| 📐 MBD | `MATLAB`、`Simulink`、`Stateflow`、`MBD`、`MIL/HIL` |
-| 🧠 AI & Agent | `LLM Runtime`、`Agent`、`MCP`、`Tool`、`Skill`、`Knowledge Base` |
-| 🛠️ Software | `Python`、`TypeScript`、`Next.js`、`GitHub Actions`、`Automation` |
-| 🧾 Engineering | `SWRS`、`Architecture`、`SWDD`、`Calibration Evidence`、`Test Case` |
+### 当前主线
 
-## 📡 仓库信号
+> 不做概念 Demo，只做可交付的工程闭环。
 
-<!-- PROFILE-AUTO:START -->
-<table>
-  <tr>
-    <td colspan="4"><b>📡 Signal Console</b><br /><sub>Signal Model v2 · Repos <b>8</b> · Original <b>5</b> · Fork <b>3</b> · Active 90d <b>5</b> · Stars <b>17</b> · Forks <b>2</b></sub></td>
-  </tr>
-  <tr>
-    <td width="25%"><b>🧭 Portfolio</b><br /><code>5 original</code> / <code>3 fork</code><br /><sub>Profile is original-first, forks are reference assets.</sub></td>
-    <td width="25%"><b>⚡ Momentum</b><br /><code>3</code> in 30d · <code>5</code> in 90d<br /><sub>7 repos touched within 365 days.</sub></td>
-    <td width="25%"><b>🧪 Engineering</b><br /><code>MBD / Simulink</code><br /><sub>Dominant public engineering track.</sub></td>
-    <td width="25%"><b>🌐 Reach</b><br /><code>54</code> avg signal<br /><sub>Stars, watchers, forks and freshness.</sub></td>
-  </tr>
-  <tr>
-    <td colspan="4"><b>Language Mix</b><br /><sub>🐍 Python <b>3</b> · 📚 Docs <b>3</b> · 🟨 JavaScript <b>1</b> · 📐 MATLAB <b>1</b></sub></td>
-  </tr>
-</table>
+- **智慧空调 Agent** — 热舒适控制 · 用户偏好自学习 · 车端量产约束
+- **AI Native 研发平台** — PRD/SOR → SWRS → Architecture/SWDD → Simulink → MIL/HIL → 标定与交付证据 → 知识沉淀
+- **MBD 自动化** — Simulink 工具链内嵌 Agent · 多模型 Context · 脚本与文档自动生成
 
-<table>
-  <tr>
-    <th>Signal</th>
-    <th>Repository</th>
-    <th>Track</th>
-    <th>Signals</th>
-    <th>更新</th>
-  </tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-76-0369A1?style=flat-square&labelColor=0F172A" alt="Signal: 76" /><br /><sub>▰▰▰▰▰▰▱▱</sub></td><td><a href="https://github.com/suzike/matlab-simulink-copilot">matlab-simulink-copilot</a><br /><sub>内嵌进 MATLAB/Simulink 界面的 AI 助手侧边栏，支持 Claude Code/Codex 后端。</sub></td><td>📐 MBD / Simulink<br /><sub>JavaScript · Original</sub></td><td>⭐ 2 · 👁️ 2 · 🍴 0<br /><sub>created 2026-06-26</sub></td><td>2026-06-27</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-70-0369A1?style=flat-square&labelColor=0F172A" alt="Signal: 70" /><br /><sub>▰▰▰▰▰▰▱▱</sub></td><td><a href="https://github.com/suzike/Vehicle-Thermal-LLM-MultiAgent">Vehicle-Thermal-LLM-MultiAgent</a><br /><sub>面向汽车空调热舒适的大模型驱动 Agent 智能系统。</sub></td><td>🌡️ Thermal Agent<br /><sub>Python · Original</sub></td><td>⭐ 1 · 👁️ 1 · 🍴 0<br /><sub>created 2026-06-23</sub></td><td>2026-06-28</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-70-0369A1?style=flat-square&labelColor=0F172A" alt="Signal: 70" /><br /><sub>▰▰▰▰▰▰▱▱</sub></td><td><a href="https://github.com/suzike/AITrain_Platform">AITrain_Platform</a><br /><sub>AI 算法开发、训练、部署等全套研发可视化平台。</sub></td><td>🧠 AI Training Platform<br /><sub>Python · Original</sub></td><td>⭐ 3 · 👁️ 3 · 🍴 0<br /><sub>created 2026-05-09</sub></td><td>2026-05-14</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-68-0369A1?style=flat-square&labelColor=0F172A" alt="Signal: 68" /><br /><sub>▰▰▰▰▰▱▱▱</sub></td><td><a href="https://github.com/suzike/DeepSeekMatlabCopilot">DeepSeekMatlabCopilot</a><br /><sub>DeepSeek AI copilot for MATLAB engineering workflows.</sub></td><td>📐 MBD / Simulink<br /><sub>MATLAB · Original</sub></td><td>⭐ 10 · 👁️ 10 · 🍴 2<br /><sub>created 2025-12-14</sub></td><td>2025-12-14</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-64-B45309?style=flat-square&labelColor=0F172A" alt="Signal: 64" /><br /><sub>▰▰▰▰▰▱▱▱</sub></td><td><a href="https://github.com/suzike/suzike">suzike</a><br /><sub>Profile README for Suzike / 南橘</sub></td><td>🪪 Profile / Ops<br /><sub>Python · Original</sub></td><td>⭐ 0 · 👁️ 0 · 🍴 0<br /><sub>created 2026-06-28</sub></td><td>2026-06-28</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-37-475569?style=flat-square&labelColor=0F172A" alt="Signal: 37" /><br /><sub>▰▰▰▱▱▱▱▱</sub></td><td><a href="https://github.com/suzike/wechat-radar">wechat-radar</a><br /><sub>微信聊天情报看板：聚合群聊信号、话题、链接和趋势。</sub></td><td>📡 Signal Dashboard<br /><sub>Docs · Fork</sub></td><td>⭐ 0 · 👁️ 0 · 🍴 0<br /><sub>created 2026-05-26</sub></td><td>2026-05-26</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-26-475569?style=flat-square&labelColor=0F172A" alt="Signal: 26" /><br /><sub>▰▰▱▱▱▱▱▱</sub></td><td><a href="https://github.com/suzike/EmbedSummary">EmbedSummary</a><br /><sub>精品嵌入式资源汇总。</sub></td><td>📚 Knowledge Base<br /><sub>Docs · Fork</sub></td><td>⭐ 1 · 👁️ 1 · 🍴 0<br /><sub>created 2022-09-18</sub></td><td>2022-06-02</td></tr>
-<tr><td align="center"><img src="https://img.shields.io/badge/Signal-25-475569?style=flat-square&labelColor=0F172A" alt="Signal: 25" /><br /><sub>▰▰▱▱▱▱▱▱</sub></td><td><a href="https://github.com/suzike/next-ai-draw-io">next-ai-draw-io</a><br /><sub>AI-assisted draw.io diagramming with natural-language editing.</sub></td><td>🧩 Diagram Workflow<br /><sub>Docs · Fork</sub></td><td>⭐ 0 · 👁️ 0 · 🍴 0<br /><sub>created 2025-12-14</sub></td><td>2025-12-14</td></tr>
-</table>
+### 代表项目
 
-<sub>模型说明: Signal = 活跃度 + 原创性 + 采用度 + 工程描述完整度；仅使用 GitHub REST API 公开元数据，不代表项目商业价值或代码质量终判。</sub>
+| 项目 | 方向 | 一句话 |
+| :--- | :--- | :--- |
+| [**matlab-simulink-copilot**](https://github.com/suzike/matlab-simulink-copilot) | MBD | 内嵌 MATLAB/Simulink 界面的 AI 助手侧边栏，Claude Code / Codex 后端 |
+| [**Vehicle-Thermal-LLM-MultiAgent**](https://github.com/suzike/Vehicle-Thermal-LLM-MultiAgent) | Thermal Agent | 面向汽车空调热舒适的大模型驱动多智能体系统 |
+| [**AITrain_Platform**](https://github.com/suzike/AITrain_Platform) | Platform | AI 算法开发、训练、部署的全流程可视化研发平台 |
+| [**DeepSeekMatlabCopilot**](https://github.com/suzike/DeepSeekMatlabCopilot) | MBD | MATLAB 工程研发场景的 Copilot 探索 |
 
-<sub>生成时间: 2026-06-28T09:49:09Z · 数据来自 GitHub REST API · 授权 workflow scope 后可启用 6 小时定时刷新。</sub>
-<!-- PROFILE-AUTO:END -->
+### 技术栈
 
-## 📝 工程笔记
-
-我更偏好能直接指导开发的工程化交付：软件需求、详细设计、技术方案、开发任务、`Test Case`、数据流、控制逻辑、验证计划和可复现脚本，而不是高层概念介绍。
+`MATLAB` `Simulink` `Stateflow` `MIL/HIL` &nbsp;·&nbsp; `Python` `TypeScript` `Next.js` &nbsp;·&nbsp; `LLM` `Agent` `MCP` `RAG` &nbsp;·&nbsp; `SWRS` `SWDD` `Calibration Evidence`
 
 <details>
-  <summary><b>🧠 AI Native 研发平台蓝图</b></summary>
-  <br />
+<summary><b>更多</b> · 工程笔记与持续关注</summary>
 
-平台底座优先采用成熟的 `LLM Runtime` 和 `Agent` 能力，在其上构建企业自己的 `Role`、`Skill`、`Tool`、`MCP Service`、`Knowledge Base` 和 `Agent Loop Engineering`（智能体的循环工程），而不是重新实现底层 Agent Engine。
+<br/>
 
-核心闭环：`PRD/SOR` 输入 → `Functional Requirement` 拆解 → `SWRS` 分析 → `Architecture/SWDD` → `Simulink Model` → `MIL/HIL Test Case` → 标定与交付证据 → 知识沉淀与流程改进。
+**工程笔记** — 我偏好能直接指导开发的工程化交付：软件需求、详细设计、控制逻辑、Test Case、验证计划与可复现脚本，而不是高层概念介绍。
+
+**持续关注** — Agent 产品化与 Agent Loop Engineering · 智能座舱与个性化热舒适 · Polarion / 需求到交付的研发闭环 · Simulink Toolchain 与 MIL/HIL 自动化
+
+<br/>
+
+<div align="center">
+<img height="150" src="https://github-readme-stats.vercel.app/api?username=suzike&show_icons=false&hide_border=true&hide_title=true&hide_rank=true&theme=default&count_private=true" alt="stats" />
+</div>
+
 </details>
 
-<details>
-  <summary><b>🌡️ 智慧空调 Agent 方向</b></summary>
-  <br />
+### 联系
 
-智慧空调 Agent 方向结合热舒适控制、个性化用户偏好学习、智能座舱场景和 AI 控制算法。工程落地需要同时关注车端约束、控制稳定性、标定工作量、验证证据和量产软件边界。
-</details>
+- 微信公众号 **「林南橘」** — 工程笔记 · 技术复盘 · AI Native 研发平台思考
+- **Repository Issues** — 需求、Bug、方案讨论请进对应仓库
 
-## 🔭 持续关注
+<br/>
 
-| 方向 | 关注内容 |
-| --- | --- |
-| 🧠 Agent 工程 | Agent 产品化、`Agent Loop Engineering`（智能体的循环工程）、`MCP`、企业 `Skill/Tool` 体系 |
-| 🚗 汽车 AI | 智能座舱、热舒适、智慧空调、个性化控制、自学习算法 |
-| 🏗️ 工程平台 | `Polarion`、`Harness Engineering`（约束工程）、从需求到交付的研发闭环 |
-| 📐 MBD 自动化 | `Simulink Toolchain`、`MIL/HIL Automation`、文档生成、`Test Case` 生成 |
-
-## 🔗 联系
-
-| 入口 | 用途 |
-| --- | --- |
-| 🧑‍💻 GitHub: [@suzike](https://github.com/suzike) | 代码、工具和工程实验 |
-| 📝 微信公众号: 林南橘 | 工程笔记、技术复盘、AI Native 研发平台思考 |
-| 🧩 Repository Issues | 需求、Bug、方案讨论优先进入对应仓库 |
-
-<p align="center">
-  <sub>Automotive Thermal Management · AI Native R&amp;D · MATLAB/Simulink MBD · Agent Engineering</sub>
-</p>
+<div align="center">
+<sub>Automotive Thermal Management · AI Native R&D · MATLAB/Simulink MBD · Agent Engineering</sub>
+</div>
